@@ -1,4 +1,5 @@
 ﻿//Сравнить два числа
+
 int a = new Random().Next(1,10);
 Console.WriteLine(a);
 
@@ -6,15 +7,17 @@ int b = new Random().Next(1,10);
 Console.WriteLine(b);
 if(a > b) 
 {
-    int max = a;
-    int min = b;
+  Console.Write("Максимальное число ");
+  Console.Write(a);
+  Console.Write(" Минимальное число ");
+  Console.Write(b);
 }
-Console.WriteLine("Максимум a = ");
-if (b > a) 
+else
 {
-    int max = b;
-    int min = a;
+  Console.Write(" Максимальное число ");
+  Console.Write(b);
+  Console.Write(" Минимальное число ");
+  Console.Write(a);
 }
-Console.WriteLine("Максимум max = , min = ");
-Console.WriteLine("Максимум max > min");
+
 
