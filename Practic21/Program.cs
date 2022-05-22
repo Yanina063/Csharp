@@ -11,3 +11,5 @@ if(x < 0 && y < 0)
 Console.WriteLine("точка находится в Плоскости 3");
 else if (x < 0 && y > 0)
 Console.WriteLine("точка находится в Плоскости 4");
+else if (x = 0 && y = 0)
+Console.WriteLine("Ошибка ввода координат");
