@@ -41,7 +41,7 @@ int[,] InvertMassive(int[,] matr)
     {
         for (int j = 0; j < columsLengh; j++)  
       {
-        invertMatr[j, i] = matr[i, j];
+        matr[j, i] = matr[i, j];
       }
     }
     return invertMatr;
@@ -58,6 +58,8 @@ int row = int.Parse(Console.ReadLine() ?? "0");
 Console.Write("Введите кол-во столбцов 2хмерного массива: ");
 int colums = int.Parse(Console.ReadLine() ?? "0");
 
+if(row == colums) {
+
 int[,] matr = new int[row, colums];
 
 FillArray(matr);
@@ -71,5 +73,10 @@ Console.WriteLine("Результат замены элементов перво
 int[,] invertMatr = InvertMassive(matr);
 
 PrintArray(invertMatr);
+} else {
+  Console.WriteLine("Не Квадратный массив !!! ");  
+}
+
+
 
 
